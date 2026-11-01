@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Email
+    url: mailto:contact@mskrz.com
+    about: Prefer email for anything that should not be public.
+  - name: Product pages and guides
+    url: https://mskrz.com/
+    about: What each extension does, how to get started, and the privacy policies.
