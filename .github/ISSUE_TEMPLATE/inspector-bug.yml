@@ -1,4 +1,4 @@
-name: OmniScript Data Inspector bug
+name: Data Inspector bug
 description: Something in the panel is wrong, missing or confusing.
 title: "[Inspector] "
 labels: ["bug", "inspector"]
