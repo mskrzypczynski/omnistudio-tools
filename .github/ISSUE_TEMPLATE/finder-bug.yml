@@ -1,4 +1,4 @@
-name: OmniStudio Finder bug
+name: Component Finder bug
 description: Something in the popup is wrong, missing or confusing.
 title: "[Finder] "
 labels: ["bug", "finder"]
