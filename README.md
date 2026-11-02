@@ -12,4 +12,4 @@ shows real data from your org. The guide
 [Report a problem](https://mskrz.com/omniscript-data-inspector/guides/file-an-issue.html)
 explains the steps for the Inspector.
 
-For anything that should not be public, write to mskrz@proton.me.
+For anything that should not be public, write to contact@mskrz.com.
