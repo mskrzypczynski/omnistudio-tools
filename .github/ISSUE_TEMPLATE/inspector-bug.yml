@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time. With the version, the package flavour, the **Copy report** text and a masked debug bundle, most reports can be reproduced without any back and forth.
+        Thank you for taking the time. With the version, the package flavour, the **Copy report** text and the steps, most reports can be reproduced without any back and forth.
 
         Please do not paste real org data. Turn **Mask values** on before you copy or save anything: strings and numbers become placeholders, and the structure, keys and element names stay.
 
@@ -23,7 +23,7 @@ body:
     id: flavour
     attributes:
       label: Package flavour
-      description: Which OmniStudio the org runs. The Type/SubType/Language of the script and the Open in Designer link depend on it.
+      description: Which OmniStudio the org runs. The Type/SubType/Language of the OmniScript and the Open in Designer link depend on it.
       options:
         - Core OmniStudio
         - Managed package (vlocity_cmt, vlocity_ins or vlocity_ps)
@@ -47,25 +47,25 @@ body:
     id: report
     attributes:
       label: Copy report
-      description: In the panel open Settings (the gear, or press `,`), press **Copy report** in the Tools row, and paste the text here. It names the script, the version, the step the script is on and what the tabs show.
+      description: In the panel open Settings (the gear, or press `,`), press **Copy report** in the Tools row, and paste the text here. It names the OmniScript, the version, the step it is on, the size of the data and the last failed calls.
       render: markdown
     validations:
       required: true
 
   - type: textarea
-    id: bundle
+    id: masked
     attributes:
-      label: Masked debug bundle
+      label: Masked data or calls
       description: |
-        Turn **Mask values** on, open Settings (the gear, or press `,`), press **Save a debug bundle** in the Tools row, and drag the file into this box (or attach it with the paperclip). It holds what the panel shows, the script's definition and the last captured calls, with the data masked. Nothing leaves your computer until you attach it.
-      placeholder: Drag omniscript-debug-….json here.
+        Optional. If the problem is in the data or in a call, turn **Mask values** on and copy it: in Data, **Export** → **Copy JSON**; in Calls, right-click the call and choose **Copy input**, or press **Export**. Strings and numbers become placeholders; keys and element names stay, so look at it before you paste.
+      render: json
     validations:
-      required: true
+      required: false
 
   - type: checkboxes
     id: confirm
     attributes:
       label: Before you submit
       options:
-        - label: Mask values was on when I saved the bundle and copied the report, and nothing here shows real data.
+        - label: Mask values was on when I copied the report and the data, and nothing here shows real data.
           required: true
