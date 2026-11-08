@@ -8,13 +8,13 @@ body:
       value: |
         Thank you for taking the time. With the version, the package flavour, the **Copy report** text and the steps, most reports can be reproduced without any back and forth.
 
-        Please do not paste real org data. Turn **Mask values** on before you copy or save anything: strings and numbers become placeholders, and the structure, keys and element names stay.
+        Please do not paste real org data. Turn **Mask values** on before you copy or save anything. Strings and numbers then become placeholders. The structure, keys and element names stay.
 
   - type: input
     id: version
     attributes:
       label: Extension version
-      description: At the bottom right of the panel, or on chrome://extensions.
+      description: You find it at the bottom right of the panel or on chrome://extensions.
       placeholder: "2.0.0"
     validations:
       required: true
@@ -39,7 +39,7 @@ body:
       placeholder: |
         1. Opened the Structure tab on an OmniScript with a Set Values element.
         2. Selected the element and opened Properties.
-        3. Expected the Set Values rows; saw an empty table.
+        3. Expected the Set Values rows but saw an empty table.
     validations:
       required: true
 
@@ -47,7 +47,7 @@ body:
     id: report
     attributes:
       label: Copy report
-      description: In the panel open Settings (the gear, or press `,`), press **Copy report** in the Tools row, and paste the text here. It names the OmniScript, the version, the step it is on, the size of the data and the last failed calls.
+      description: In the panel, open Settings (the gear, or press `,`) and press **Copy report** in the Tools row. Paste the text here. It names the OmniScript, the version, the step it is on, the size of the data and the last failed calls.
       render: markdown
     validations:
       required: true
@@ -57,7 +57,7 @@ body:
     attributes:
       label: Masked data or calls
       description: |
-        Optional. If the problem is in the data or in a call, turn **Mask values** on and copy it: in Data, **Export** → **Copy JSON**; in Calls, right-click the call and choose **Copy input**, or press **Export**. Strings and numbers become placeholders; keys and element names stay, so look at it before you paste.
+        Optional. If the problem is in the data or in a call, turn **Mask values** on and copy it. In Data, press **Export** → **Copy JSON**. In Calls, right-click the call and choose **Copy input**, or press **Export**. Strings and numbers become placeholders. Keys and element names stay, so look at the text before you paste it.
       render: json
     validations:
       required: false

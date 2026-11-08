@@ -6,13 +6,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time. Please do not paste real org data: component names from your org can be sensitive, so use invented names or blur them in screenshots.
+        Thank you for taking the time. Please do not paste real org data. Component names from your org can be sensitive, so use invented names or blur them in screenshots.
 
   - type: input
     id: version
     attributes:
       label: Extension version
-      description: On chrome://extensions, or at the bottom of the popup's help.
+      description: You find it on chrome://extensions or at the bottom of the popup's help.
       placeholder: "1.4.0"
     validations:
       required: true
