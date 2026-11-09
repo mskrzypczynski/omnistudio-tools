@@ -39,7 +39,7 @@ body:
       placeholder: |
         1. Opened the Structure tab on an OmniScript with a Set Values element.
         2. Selected the element and opened Properties.
-        3. Expected the Set Values rows but saw an empty table.
+        3. I expected the Set Values rows. I saw an empty table.
     validations:
       required: true
 
