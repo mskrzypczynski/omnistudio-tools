@@ -3,7 +3,7 @@
 This repository is the public issue tracker for the browser extensions
 built by Mikołaj Skrzypczyński for Salesforce OmniStudio developers:
 
-- [mskrz Inspector for OmniScript](https://mskrz.com/omniscript-data-inspector/)
+- [mskrz Inspector for OmniStudio](https://mskrz.com/omniscript-data-inspector/)
 - [mskrz Finder for OmniStudio](https://mskrz.com/omnistudio-finder/)
 
 Open an issue to report a bug or suggest a feature. Before you attach a
